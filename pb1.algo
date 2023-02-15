@@ -1,0 +1,21 @@
+ALGORITHM pb
+VAR
+ A: INTEGER[3];
+ B: INTEGER[4];
+ i:INTEGER;
+ sum : INTEGER := 0;
+ BEGIN
+ A:={3,1,7,9}
+ B:={2,4,1,9,7}
+  FOR i FROM 0 TO A.length-1 STEP 1 DO 
+    IF (A.length[i] <> B.length[i]) THEN
+    sum := sum + A[i];
+    A[i+1];
+    END_IF
+FOR i FROM 0 TO B.length-1 STEP 1 DO 
+    IF (A.length[i] <> B.length[i]) THEN
+    sum := sum + B[i];
+    B[i+1];
+    END_IF
+ Write("The length is ",sum);
+ END

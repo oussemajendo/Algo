@@ -1,0 +1,20 @@
+ALGORITHM dotProd
+VAR
+    V1: INTEGER[3];
+    V2: INTEGER[3];
+    i:INTEGER;
+    ps : INTEGER := 0;
+BEGIN
+FOR i FROM 0 TO V1.length STEP 1  DO
+     IF (A.length[i] == B.length[i]) THEN
+       ps = V1[i] * V2[i] ;
+    END_IF
+END_FOR
+IF (ps/2 = 0) THEN
+    Write("vectors are orthogonal")
+    else 
+    Write("vectors are not orthogonal")
+END_IF
+    
+
+END

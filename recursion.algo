@@ -1,0 +1,20 @@
+FUNCTION is_palindrome(word) : return_type
+VAR
+     left = 0
+     right = len(word) - 1
+BEGIN
+    WHILE (left < right) DO
+        IF (word[left] != word[right]) THEN
+            return False
+            left += 1
+            right -= 1
+        END_IF 
+   
+      END_WHILE
+END 
+
+   
+    
+   
+        
+    
